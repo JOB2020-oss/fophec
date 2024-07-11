@@ -1,0 +1,195 @@
+{% extends 'layout.html' %}
+{% block animals %}
+<header id="header" class="fixed-top">
+	<div class="container d-flex align-items-center">
+		<a href="/" class="logo me-auto me-lg-0"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+	   <!-- <h1 class="logo me-auto"><a href="index.html"><span>Com</span>pany</a></h1> -->
+	   <h1 class="logo me-auto"><a href="/"><span>Agri Farmers</span></a></h1>
+	  <nav id="navbar" class="navbar order-last order-lg-0">
+		    <ul>
+		      <li><a href="/">Home</a></li>
+		      <li class="dropdown"><a href="about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+		      </li>
+		      <li><a href="services">Services</a></li>
+			    <li class="dropdown"><a href="product" class="active"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+		            <ul>
+		              <li><a href="animals">Animal Feeds</a></li>
+		              <li><a href="farm">Farm Inputs</a></li>
+		            </ul>
+		        </li>
+		      <li><a href="contact">Contact</a></li>
+		    </ul>
+	        <i class="bi bi-list mobile-nav-toggle"></i>
+	   </nav><!-- .navbar -->
+	  <div class="header-social-links d-flex">
+	    <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+	    <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+	    <a href="https://www.instagram.com/?next=%2F" class="instagram"><i class="bu bi-instagram"></i></a>
+	  </div>
+	</div>
+</header><!-- End Header -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+	    <div class="d-flex justify-content-between align-items-center">
+	      <h2>Products</h2>
+	      <ol>
+	        <li><a href="/">Home</a></li>
+	        <li>Livestock Products</li>
+	      </ol>
+	    </div>
+  </div>
+</section><br><!-- End Breadcrumbs -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<section>
+	<div class="container mt-3">
+		<div id="animal">
+			<div class="row">
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<!-- <div class="card mb-4 shadow-sm"> -->
+						<img src="static/img/portfolio/pigBoost.png" class="card-img-top" alt="Product 2">
+						<div class="card-body">
+							<!-- <h5 class="card-title">Pig Boost</h5> -->
+							<p class="card-text">Inputs Agri Farmers Pigboost is a balanced nutritional formula both vitamins,minerals and amino acids required for health growth of pigs.PigBoost promotes fast growth to acheive desired slaughter weight of 60-70kg</p>
+							<a href="#" class="btn btn-success" onclick="pigBoost('PigBoost', 'Inputs Agri-Farmers Pigboost is a balanced nutritional formula with both vitamins,minerals and amino acids required for health growth of pigs.PigBoost contains the Olaquindox whcih promotes fast growth to acheive desired slaughter weight of 60-70kg. It contains a special mixture for every type of pig with a suitable chemical composition of important minerals')">View More</a>
+						</div>
+						<!-- </div> -->
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/lyrXtr.png" class="card-img-top" alt>
+					    <div class="card-body">
+							<!-- <h5 class="card-title">Layers Extra & Growers Premix</h5> -->
+							<p class="card-text">A magic product from Inputs Agri-Farmers which is essential for improving the quality and production of eggs in poultry</p>
+							<a href="#" class="btn btn-success" onclick="layersExtra('Layers Extra & Growers Premix', 'A magic product from Inputs Agri-Farmers which is essential for improving the quality and production of eggs in poultry'
+							)">View More</a>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/milkBooster.png" class="card-img-top" alt="Product 1">
+						<div class="card-body">
+							<!-- <h5 class="card-title">Milk Booster</h5> -->
+							<p class="card-text">Milk Booster is the essential balanced combination of minerals,vitamins and trace elements for lactating cows,pregnant cows,heifers calves and bulls which can be used all year around.</p>
+							<a href="#" class="btn btn-success" onclick="milkBooster('Milk Booster', 'Milk Booster is the essential balanced combination of minerals,vitamins and trace elements for lactating cows,pregnant cows,heifers calves and bulls which can be used all year around')">View More</a>
+						</div>
+				    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+		            <div class="card h-100">
+		             <img src="static/img/portfolio/jotoLick.png" class="card-img-top" alt="Product 2">
+			            <div class="card-body">
+			              <h5 class="card-title">Joto Lick</h5>
+			              <p class="card-text">Joto lick is an essential mineral which promotes Estrus(Heat) in cows within a short interval of time regardless of heat resistance.</p>
+			              <a href="#" class="btn btn-success" onclick="jotoLick('Joto lick is an essential mineral which promotes Estrus(Heat) in cows within a short interval of time regardless of heat resistance.')">View More</a>
+			            </div>
+		          </div>
+		        </div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/magicPig.png" class="card-img-top" alt="Product 1">
+						<div class="card-body">
+							<!-- <h5 class="card-title">Magic Pig Boost</h5> -->
+							<p class="card-text">Magic Pig Boost is an essential supplement with added Mutlivitamins such as A,D3,E and packed as an essential soluble powder</p>
+							<a href="#" class="btn btn-success" onclick="magicPigBoost('Magic Pig Boost', 'Magic Pig Boost is an essential supplement with added Mutlivitamins such as A,D3,E and packed as an essential soluble powder')">View More</a>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/broilerPremix.png" class="card-img-top" alt="Product 2">
+						<div class="card-body">
+							<!-- <h5 class="card-title">Broiler Extra and Chick Premix</h5> -->
+							<p class="card-text">Broiler premix is an essential mineral supplement  for broilers with increased ability to nourish the health of broilers.Broiler premix has an added advantage of provide free protection against infections</p>
+							<a href="#" class="btn btn-success" onclick="broilerExtra('Broiler Extra and Chick Premix', 'Broiler premix is an essential mineral supplement  for broilers with increased ability to nourish the health of broilers.Broiler premix has an added advantage of provide free protection against infections')">View More</a>
+						</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/broExtra.png" class="card-img-top" alt>
+					    <div class="card-body">
+							<h5 class="card-title">Bro Extra</h5>
+							<p class="card-text">Bro Extra is a broiler boost water soluble powder added with Vitamins such as Vitamin A,D3,E,B12,B3</p>
+							<a href="#" class="btn btn-success" onclick="broExtra('Bro Extra', 'Bro Extra is a broiler boost water soluble powder added with Vitamins such as Vitamin A,D3,E,B12,B3'
+							)">View More</a>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/dcpChenga.png" class="card-img-top" alt="Product 1">
+						<div class="card-body">
+							<!-- <h5 class="card-title">D.C.P chenga chenga</h5> -->
+							<p class="card-text">Agri-Farmers D.C.P is a vitamin D3 added dicalcium phosphate with essential minerals for removal of harmfull chemicals from animal foods</p>
+							<a href="#" class="btn btn-success" onclick="dcpChenga('D.C.P chenga chenga', 'D.C.P chenga chenga is a vitamin D3 added dicalcium phosphate with essential minerals for removal of harmfull chemicals from animal foods')">View More</a>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/epsomSalt.png" class="card-img-top" alt="Product 2">
+						<div class="card-body">
+							<!-- <h5 class="card-title">Epsom Salt</h5> -->
+							<p class="card-text">Epsom salt is a Magnesium Sulphate (MgSO4) salt essential for providing relief from constipation and stimulate the bowel movement</p>
+							<a href="#" class="btn btn-success" onclick="epsomSalt('Epsom Salt', 'Epsom salt is a Magnesium Sulphate (MgSO4) salt essential for providing relief from constipation and stimulate the bowel movement')">View More</a>
+						</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card h-100">
+						<img src="static/img/portfolio/layMore.png" class="card-img-top" alt>
+					    <div class="card-body">
+							<!-- <h5 class="card-title">Lay More Extra</h5> -->
+							<p class="card-text">Lay More Extra is an egg boost water soluble powder rich in vitamins such as A,C,D3,E,K,B12 and B2</p>
+							<a href="#" class="btn btn-success" onclick="layMoreExtra('Lay More Extra', 'Lay More Extra is an egg boost water soluble powder rich in vitamins such as A,C,D3,E,K,B12 and B2'
+							)">View More</a>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4 mb-3 col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+				<div class="card h-100">
+					<img src="static/img/portfolio/madumeLick.png" class="card-img-top" alt="Product 1">
+					<div class="card-body">
+						<!-- <h5 class="card-title">Madume Lick</h5> -->
+						<p class="card-text">Madume Lick is the booster formula for nourishing the health of cows. Packed with extra minerals</p>
+						<a href="#" class="btn btn-success" onclick="madumeLick('Madume Lick', 'Madume Lick is the booster formula for nourishing the health of cows. Packed with extra minerals')">View More</a>
+					</div>
+				</div>
+			</div>
+	    </div>
+    </div>
+	<!-- Details Modal -->
+	<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="detailsModalLabel">Product Details</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p id="detailsModalDescription"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

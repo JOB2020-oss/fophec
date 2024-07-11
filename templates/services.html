@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+{% block services %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="/" class="logo me-auto me-lg-0"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+       <!-- <h1 class="logo me-auto"><a href="index.html"><span>Com</span>pany</a></h1> -->
+       <h1 class="logo me-auto"><a href="/">Input <span>Agri Farmers </span><br></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about">About Us</a></li>
+            </ul>
+          </li>
+          <li><a href="services" class="active">Services</a></li>
+          <li class="dropdown"><a href="product"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="animals">Animal Feeds</a></li>
+                <li><a href="farm">Farm Inputs</a></li>
+              </ul>
+            </li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="https://www.instagram.com/?next=%2F" class="instagram"><i class="bu bi-instagram"></i></a>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Services</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Services</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <img src="static/img/services/s1.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Manufacturing of agriculture inputs</a></h4>
+              <p>Inputs Agri-Farmers Limited produces a wide range of high-quality agriculture inputs such as fertilizers and livestock feed supplements. We use the latest technology and sustainable practices to ensure that our products promote healthy soil and plant growth. Our team of experienced professionals is dedicated to research and development to offer innovative and customized solutions that meet the unique needs of our clients</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <img src="static/img/services/s2.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Distribution of agriculture inputs</a></h4>
+              <p>At Inputs Agri-Farmers Limited, we supply our clients with the best possible agriculture inputs available. We work closely with our clients to understand their specific needs and offer customized solutions that meet their unique requirements. Our distribution network is strategically designed to ensure timely delivery of our products, regardless of the location of the client.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <img src="static/img/services/s3.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Support and advice to our clients</a></h4>
+              <p>Our commitment to our clients doesn't end with the production and supply of our products. We understand that each farm is unique and has its own set of challenges. We offer our clients support and advice on how to get the most out of our products. Our experienced team is available to offer technical support, training, and advice on best practices to ensure our clients success</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section --> 
+  </main><!-- End #main -->
+{% endblock %}
